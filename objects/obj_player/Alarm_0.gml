@@ -1,0 +1,1 @@
+/// @description Shot cool down

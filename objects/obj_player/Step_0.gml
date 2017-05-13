@@ -31,8 +31,9 @@ if(xspd < 0){
 	facing_right = false;
 }
 
-if(obj_controls.fire){
+if(obj_controls.fire and alarm_get(0) <= 0){
 	tmp_laz = instance_create_layer(x,y-20,"Instances",obj_lazer);
 	tmp_laz.xspd = facing_right ? xspd + 20 :  xspd - 20 ;
 	tmp_laz.x = facing_right ? x+64 : x-64;
+	alarm_set(0,10);
 }
