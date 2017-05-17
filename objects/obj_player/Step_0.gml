@@ -4,17 +4,23 @@
 xspd += obj_controls.x_axis * POW;
 yspd += obj_controls.y_axis * POW;
 
-//Add drag
-xspd += xspd > 0 ? -DRAG : DRAG;
-xspd = abs(xspd) > DRAG ? xspd : 0;
-yspd += yspd > 0 ? -DRAG : DRAG;
-yspd = abs(yspd) > DRAG ? yspd : 0;
-
 //Cap x and y speed to max_speed
 if(xspd > max_speed) xspd = max_speed;
 if(xspd < -max_speed) xspd = -max_speed;
 if(yspd > max_speed) yspd = max_speed;
 if(yspd < -max_speed) yspd = -max_speed;
+
+//Add drag
+if(obj_controls.x_axis == 0){
+	xspd += xspd > 0 ? -DRAG : DRAG;
+	xspd = abs(xspd) > DRAG ? xspd : 0;
+}
+
+if(obj_controls.y_axis == 0){
+	yspd += yspd > 0 ? -DRAG : DRAG;
+	yspd = abs(yspd) > DRAG ? yspd : 0;
+}
+
 
 //Add the speeds to the position.
 x+= xspd;
