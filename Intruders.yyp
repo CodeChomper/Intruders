@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "c26dc0dd-629e-44c2-823c-9a51c0cbdeed",
+            "Value": {
+                "id": "19bcd66a-cbe0-4774-a8e3-635fabf6e74f",
+                "resourcePath": "sprites\\spr_f16\\spr_f16.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c9dc47bb-f9df-460a-b898-8b9e1e2e0669",
             "Value": {
                 "id": "f2baf670-ac7c-4247-b083-9bdfbbce4688",

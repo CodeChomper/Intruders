@@ -15,7 +15,6 @@ if(obj_controls.x_axis == 0){
 	xspd += xspd > 0 ? -DRAG : DRAG;
 	xspd = abs(xspd) > DRAG ? xspd : 0;
 }
-
 if(obj_controls.y_axis == 0){
 	yspd += yspd > 0 ? -DRAG : DRAG;
 	yspd = abs(yspd) > DRAG ? yspd : 0;
